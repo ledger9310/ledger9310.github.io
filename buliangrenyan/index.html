@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>不良人研究所导航-不良人研究所资源导航_不良人研究所官网入口与站点索引</title>
+<meta name="description" content="不良人研究所导航汇集不良人研究所的官网入口、资源索引与常用页面，帮助访问者快速找到研究所动态、资料专区与社区讨论入口，一页看清站点结构与访问路径。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314121a'/%3E%3Cpath d='M20 44V22l12 10 12-10v22' fill='none' stroke='%23e0b464' stroke-width='4' stroke-linejoin='round' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='46' r='3' fill='%23e0b464'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#14121a;
+  --ink-2:#1e1b26;
+  --paper:#f7f3ea;
+  --paper-2:#efe8d9;
+  --gold:#c79a4b;
+  --gold-soft:#e0b464;
+  --text:#2a2531;
+  --muted:#6d6577;
+  --line:rgba(199,154,75,.32);
+  --radius:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+  background:var(--paper);
+  color:var(--text);
+  line-height:1.8;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img,svg{display:block;max-width:100%}
+.wrap{width:min(1140px,92vw);margin:0 auto}
+
+/* ---------- header ---------- */
+.site-header{
+  background:var(--ink);
+  color:var(--paper);
+  border-bottom:2px solid var(--gold);
+  position:sticky;top:0;z-index:40;
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:18px;padding:14px 0;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-mark{
+  width:42px;height:42px;flex:0 0 auto;
+  border:1.5px solid var(--gold);border-radius:10px;
+  display:grid;place-items:center;background:rgba(199,154,75,.08);
+}
+.brand-text{
+  font-size:19px;font-weight:700;letter-spacing:.06em;
+  color:var(--paper);white-space:nowrap;
+}
+.brand-sub{display:block;font-size:11px;font-weight:400;letter-spacing:.22em;color:var(--gold-soft);opacity:.85}
+.nav ul{display:flex;gap:6px;list-style:none;flex-wrap:wrap}
+.nav a{
+  display:block;padding:6px 12px;border-radius:8px;
+  font-size:14px;color:rgba(247,243,234,.82);
+  transition:background .2s,color .2s;
+}
+.nav a:hover,.nav a:focus-visible{background:rgba(199,154,75,.16);color:var(--gold-soft)}
+
+/* ---------- hero ---------- */
+.hero{
+  background:
+    radial-gradient(circle at 82% 18%,rgba(199,154,75,.18),transparent 58%),
+    linear-gradient(160deg,var(--ink) 0%,var(--ink-2) 72%,#241f2e 100%);
+  color:var(--paper);
+  padding:58px 0 52px;
+  border-bottom:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.hero::after{
+  content:"";position:absolute;right:-90px;bottom:-120px;
+  width:340px;height:340px;border:1px solid rgba(199,154,75,.22);
+  border-radius:50%;pointer-events:none;
+}
+.hero-grid{display:grid;grid-template-columns:1.35fr .85fr;gap:44px;align-items:center;position:relative;z-index:1}
+.eyebrow{
+  display:inline-block;font-size:12px;letter-spacing:.28em;
+  color:var(--gold-soft);border:1px solid var(--line);
+  padding:4px 12px;border-radius:999px;margin-bottom:18px;
+}
+h1{
+  font-size:clamp(26px,3.6vw,40px);
+  line-height:1.35;letter-spacing:.04em;font-weight:700;
+  margin-bottom:16px;
+}
+h1 .hl{color:var(--gold-soft)}
+.hero-lead{font-size:15.5px;color:rgba(247,243,234,.78);max-width:34em;margin-bottom:26px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:10px;font-size:15px;font-weight:600;
+  border:1px solid transparent;transition:transform .18s,background .2s,color .2s;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--gold);color:#1a1520;border-color:var(--gold)}
+.btn-primary:hover{background:var(--gold-soft)}
+.btn-ghost{background:transparent;color:var(--paper);border-color:rgba(247,243,234,.34)}
+.btn-ghost:hover{border-color:var(--gold-soft);color:var(--gold-soft)}
+.hero-stats{
+  margin-top:30px;display:flex;gap:28px;flex-wrap:wrap;
+  border-top:1px solid rgba(247,243,234,.14);padding-top:18px;
+}
+.stat b{display:block;font-size:20px;color:var(--gold-soft);letter-spacing:.04em}
+.stat span{font-size:12.5px;color:rgba(247,243,234,.62);letter-spacing:.08em}
+
+.hero-card{
+  background:rgba(247,243,234,.05);
+  border:1px solid rgba(199,154,75,.34);
+  border-radius:var(--radius);
+  padding:22px;
+  backdrop-filter:blur(2px);
+}
+.hero-card h2{font-size:15px;letter-spacing:.12em;color:var(--gold-soft);margin-bottom:14px;font-weight:600}
+.hero-card ul{list-style:none;display:grid;gap:2px}
+.hero-card li a{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  font-size:14px;padding:9px 4px;border-bottom:1px dashed rgba(247,243,234,.13);
+  color:rgba(247,243,234,.86);
+}
+.hero-card li:last-child a{border-bottom:0}
+.hero-card li a:hover{color:var(--gold-soft)}
+.hero-card .tag{font-size:11px;color:var(--muted);letter-spacing:.06em}
+
+/* ---------- section basic ---------- */
+section{padding:56px 0}
+.sec-head{margin-bottom:30px;max-width:44em}
+.sec-head .kicker{
+  font-size:12px;letter-spacing:.26em;color:var(--gold);
+  margin-bottom:8px;display:block;font-weight:600;
+}
+.sec-head h2{
+  font-size:clamp(20px,2.4vw,27px);line-height:1.45;
+  letter-spacing:.03em;font-weight:700;margin-bottom:10px;
+}
+.sec-head p{font-size:15px;color:var(--muted)}
+
+/* ---------- directory grid ---------- */
+.dir-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.dir-card{
+  background:#fffdf8;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px 20px;display:flex;flex-direction:column;gap:10px;
+  transition:border-color .2s,box-shadow .2s,transform .2s;
+}
+.dir-card:hover{border-color:var(--gold);box-shadow:0 8px 22px rgba(20,18,26,.07);transform:translateY(-2px)}
+.dir-icon{
+  width:38px;height:38px;border-radius:9px;display:grid;place-items:center;
+  background:var(--paper-2);border:1px solid var(--line);
+}
+.dir-card h3{font-size:16.5px;letter-spacing:.03em;font-weight:700}
+.dir-card p{font-size:13.5px;color:var(--muted);line-height:1.75;flex:1}
+.dir-link{font-size:13px;color:var(--gold);font-weight:600;letter-spacing:.06em}
+.dir-link:hover{color:var(--ink)}
+
+/* ---------- filter / list ---------- */
+.filter-bar{
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;
+  margin-bottom:22px;padding:14px 16px;background:#fffdf8;
+  border:1px solid var(--line);border-radius:12px;
+}
+.filter-bar label{font-size:13px;color:var(--muted);letter-spacing:.08em}
+.filter-bar input[type="search"]{
+  flex:1 1 220px;min-width:0;
+  font-family:inherit;font-size:14px;color:var(--text);
+  padding:8px 12px;border-radius:8px;border:1px solid var(--line);
+  background:var(--paper);outline:none;
+}
+.filter-bar input[type="search"]:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(199,154,75,.16)}
+.chip{
+  font-family:inherit;cursor:pointer;font-size:13px;
+  padding:6px 14px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--muted);transition:.2s;
+}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip:hover{border-color:var(--gold);color:var(--ink)}
+
+.list{display:grid;gap:0;border-top:1px solid var(--line)}
+.item{
+  display:grid;grid-template-columns:78px 1fr auto;gap:18px;align-items:center;
+  padding:18px 6px;border-bottom:1px solid var(--line);
+}
+.item-cat{
+  font-size:12px;letter-spacing:.1em;color:var(--gold);
+  border:1px solid var(--line);border-radius:6px;
+  text-align:center;padding:4px 0;background:rgba(199,154,75,.07);
+}
+.item-main h3{font-size:16px;font-weight:700;letter-spacing:.02em;margin-bottom:3px}
+.item-main p{font-size:13.5px;color:var(--muted);line-height:1.7}
+.item-go{font-size:13px;color:var(--gold);font-weight:600;white-space:nowrap}
+.item-go:hover{color:var(--ink)}
+.item[hidden]{display:none}
+.empty-hint{
+  display:none;padding:26px 6px;font-size:14px;color:var(--muted);
+}
+.empty-hint.show{display:block}
+
+/* ---------- notes / two column ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.note{
+  background:#fffdf8;border:1px solid var(--line);border-left:3px solid var(--gold);
+  border-radius:10px;padding:22px;
+}
+.note h3{font-size:16px;margin-bottom:10px;letter-spacing:.03em}
+.note p{font-size:14px;color:var(--muted);margin-bottom:10px}
+.note p:last-child{margin-bottom:0}
+.steps{list-style:none;counter-reset:s;display:grid;gap:12px}
+.steps li{
+  counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:12px;
+  font-size:14px;color:var(--muted);align-items:start;
+}
+.steps li::before{
+  content:counter(s);display:grid;place-items:center;
+  width:26px;height:26px;border-radius:50%;
+  background:var(--ink);color:var(--gold-soft);font-size:12.5px;font-weight:700;
+}
+.steps strong{color:var(--text);font-weight:700}
+
+/* ---------- faq ---------- */
+.faq{display:grid;gap:12px}
+details{
+  background:#fffdf8;border:1px solid var(--line);border-radius:10px;
+  padding:16px 20px;
+}
+details[open]{border-color:var(--gold)}
+summary{
+  cursor:pointer;font-size:15px;font-weight:700;letter-spacing:.02em;
+  list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--gold);font-size:18px;font-weight:400;flex:0 0 auto}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;font-size:14px;color:var(--muted)}
+
+/* ---------- download ---------- */
+.dl-band{
+  background:var(--ink);color:var(--paper);border-radius:16px;
+  padding:34px 32px;display:flex;justify-content:space-between;
+  align-items:center;gap:26px;flex-wrap:wrap;
+  border:1px solid var(--line);
+}
+.dl-band h2{font-size:20px;letter-spacing:.03em;margin-bottom:8px}
+.dl-band p{font-size:14px;color:rgba(247,243,234,.7);max-width:36em}
+.btn-dl{
+  background:var(--gold);color:#1a1520;border:1px solid var(--gold);
+  padding:12px 26px;border-radius:10px;font-weight:700;font-size:15px;
+  pointer-events:none;opacity:.92;
+}
+.dl-note{font-size:12px;color:rgba(247,243,234,.5);letter-spacing:.06em;margin-top:6px}
+
+/* ---------- footer ---------- */
+.site-footer{
+  background:var(--ink);color:rgba(247,243,234,.72);
+  border-top:2px solid var(--gold);padding:38px 0 26px;margin-top:8px;
+}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px;margin-bottom:26px}
+.footer-brand .brand-text{font-size:17px;margin-bottom:8px}
+.footer-brand p{font-size:13px;line-height:1.8;max-width:26em}
+.footer-col h3{font-size:13px;letter-spacing:.16em;color:var(--gold-soft);margin-bottom:12px;font-weight:600}
+.footer-col ul{list-style:none;display:grid;gap:7px}
+.footer-col a{font-size:13.5px;color:rgba(247,243,234,.7)}
+.footer-col a:hover{color:var(--gold-soft)}
+.copyright{
+  border-top:1px solid rgba(247,243,234,.13);padding-top:18px;
+  font-size:12.5px;color:rgba(247,243,234,.5);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .dir-grid{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  body{font-size:15.5px}
+  .header-inner{padding:12px 0;gap:10px}
+  .brand-text{font-size:16.5px;white-space:normal;line-height:1.4}
+  .nav ul{gap:2px}
+  .nav a{padding:5px 9px;font-size:13px}
+  .hero{padding:40px 0 36px}
+  .hero-stats{gap:18px}
+  .dir-grid{grid-template-columns:1fr}
+  section{padding:40px 0}
+  .item{grid-template-columns:1fr;gap:8px;padding:16px 4px}
+  .item-cat{justify-self:start;padding:3px 12px}
+  .item-go{justify-self:start}
+  .filter-bar{padding:12px}
+  .dl-band{padding:26px 20px}
+  .footer-grid{grid-template-columns:1fr}
+  .copyright{flex-direction:column;gap:6px}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="不良人研究所导航 首页">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 64 64" role="presentation">
+          <path d="M20 44V22l12 10 12-10v22" fill="none" stroke="#e0b464" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="32" cy="47" r="3" fill="#e0b464"/>
+        </svg>
+      </span>
+      <span>
+        <span class="brand-text">不良人研究所导航</span>
+        <span class="brand-sub">STUDY · INDEX</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <ul>
+        <li><a href="#directory">站点分区</a></li>
+        <li><a href="#index">资源索引</a></li>
+        <li><a href="#guide">访问路径</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#download">资源下载</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">不良人研究所 · 入口索引</span>
+        <h1 id="hero-title">不良人研究所导航</h1>
+        <p class="hero-lead">不良人研究所导航把研究所分散在各处的入口收拢到一页：动态发布、资料专区、社区讨论与站点公告，按用途分区排列。想找什么，从下方索引直接进入，不必再逐个站点翻找。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#index">进入资源索引
+            <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 3.5 13 8l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#directory">查看站点分区</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><b>4</b><span>站点分区</span></div>
+          <div class="stat"><b>10</b><span>索引条目</span></div>
+          <div class="stat"><b>1</b><span>页直达</span></div>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="快捷入口">
+        <h2>常用入口</h2>
+        <ul>
+          <li><a href="#index"><span>研究所动态发布页</span><span class="tag">动态</span></a></li>
+          <li><a href="#index"><span>资料与文献专区</span><span class="tag">资料</span></a></li>
+          <li><a href="#index"><span>社区讨论与问答</span><span class="tag">社区</span></a></li>
+          <li><a href="#index"><span>站点公告与更新记录</span><span class="tag">公告</span></a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- DIRECTORY -->
+  <section id="directory">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">SITE SECTIONS</span>
+        <h2>四个分区，覆盖研究所的主要访问场景</h2>
+        <p>不良人研究所导航按访问目的而非页面数量分区：要读新内容去动态区，要查背景材料去资料区，想交流去社区，想确认真伪去公告区。</p>
+      </div>
+      <div class="dir-grid">
+
+        <article class="dir-card">
+          <span class="dir-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5Z" fill="none" stroke="#c79a4b" stroke-width="1.7" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>动态发布</h3>
+          <p>集中呈现研究所近期发布的观察记录与阶段性说明，适合想第一时间了解内容更新的访问者。</p>
+          <a class="dir-link" href="#index">前往动态索引 →</a>
+        </article>
+
+        <article class="dir-card">
+          <span class="dir-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M5 4h9l5 5v11H5V4Z" fill="none" stroke="#c79a4b" stroke-width="1.7" stroke-linejoin="round"/><path d="M14 4v5h5M8 13h8M8 16.5h5" fill="none" stroke="#c79a4b" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <h3>资料专区</h3>
+          <p>整理人物关系、时间线与背景材料的阅读入口。资料类内容更适合按顺序阅读，建议先看总览再看细目。</p>
+          <a class="dir-link" href="#index">前往资料索引 →</a>
+        </article>
+
+        <article class="dir-card">
+          <span class="dir-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3.2" fill="none" stroke="#c79a4b" stroke-width="1.7"/><path d="M3.5 19c0-3 2.5-4.8 5.5-4.8s5.5 1.8 5.5 4.8M16 7.5a3 3 0 0 1 0 5.6M17.5 18.8c0-2 .8-3.4 2.9-3.8" fill="none" stroke="#c79a4b" stroke-width="1.7" stroke-linecap="round"/></svg>
+          </span>
+          <h3>社区讨论</h3>
+          <p>讨论区、问答贴与观点长文的汇总入口。不同讨论串信息密度差别较大，进入后注意查看发帖时间与回复顺序。</p>
+          <a class="dir-link" href="#index">前往社区索引 →</a>
+        </article>
+
+        <article class="dir-card">
+          <span class="dir-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24"><path d="M12 3.5 20 7v5.5c0 4-3.3 6.8-8 8-4.7-1.2-8-4-8-8V7l8-3.5Z" fill="none" stroke="#c79a4b" stroke-width="1.7" stroke-linejoin="round"/><path d="m8.6 12 2.4 2.4 4.4-4.6" fill="none" stroke="#c79a4b" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>公告与校对</h3>
+          <p>存放站点公告、内容更正与访问说明。遇到说法不一致时，以公告与更正记录为准，再回看原始条目。</p>
+          <a class="dir-link" href="#index">前往公告索引 →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- INDEX WITH FILTER -->
+  <section id="index" style="background:var(--paper-2);">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">RESOURCE INDEX</span>
+        <h2>资源索引：按名称或分类筛选条目</h2>
+        <p>下面是当前收录的入口清单。输入名称可即时过滤，也可以点击分类标签只看某一类。条目描述说明该入口收录什么内容，方便先行判断是否值得进入。</p>
+      </div>
+
+      <div class="filter-bar">
+        <label for="idx-search">搜索</label>
+        <input type="search" id="idx-search" placeholder="输入入口名称，如“动态”“资料”" autocomplete="off">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true">全部</button>
+        <button class="chip" type="button" data-filter="动态" aria-pressed="false">动态</button>
+        <button class="chip" type="button" data-filter="资料" aria-pressed="false">资料</button>
+        <button class="chip" type="button" data-filter="社区" aria-pressed="false">社区</button>
+        <button class="chip" type="button" data-filter="公告" aria-pressed="false">公告</button>
+      </div>
+
+      <div class="list" id="idx-list">
+        <article class="item" data-cat="动态" data-name="研究所动态发布页">
+          <span class="item-cat">动态</span>
+          <div class="item-main">
+            <h3>研究所动态发布页</h3>
+            <p>汇总近期观察记录与阶段性说明，按发布时间倒序排列，适合追踪内容更新的访问者。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="动态" data-name="专题观察合集">
+          <span class="item-cat">动态</span>
+          <div class="item-main">
+            <h3>专题观察合集</h3>
+            <p>把围绕同一线索的多篇内容归为一组，便于连续阅读，避免在单篇之间来回跳转。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="资料" data-name="人物关系总览">
+          <span class="item-cat">资料</span>
+          <div class="item-main">
+            <h3>人物关系总览</h3>
+            <p>以关系图与条目对照的方式梳理人物脉络，适合初次接触研究内容的访问者先看总览。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="资料" data-name="时间线梳理专区">
+          <span class="item-cat">资料</span>
+          <div class="item-main">
+            <h3>时间线梳理专区</h3>
+            <p>按时间顺序排列关键节点，并标注出处，适合需要核对前后顺序的读者查阅。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="资料" data-name="背景材料索引">
+          <span class="item-cat">资料</span>
+          <div class="item-main">
+            <h3>背景材料索引</h3>
+            <p>收集与主题相关的背景说明与延伸阅读入口，条目之间以主题标签互相串联。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="社区" data-name="讨论区主版">
+          <span class="item-cat">社区</span>
+          <div class="item-main">
+            <h3>讨论区主版</h3>
+            <p>访问量最大的交流区域，帖子按活跃度与时间排序。长贴信息量高，建议先看标题与首楼。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="社区" data-name="问答与求助板块">
+          <span class="item-cat">社区</span>
+          <div class="item-main">
+            <h3>问答与求助板块</h3>
+            <p>以提问与解答为主，适合查找具体细节，也适合把已确认的回答沉淀下来供后来者检索。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="公告" data-name="站点公告">
+          <span class="item-cat">公告</span>
+          <div class="item-main">
+            <h3>站点公告</h3>
+            <p>发布访问说明、栏目调整与重要提示。访问前花一分钟浏览，能减少很多路径上的困惑。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="公告" data-name="内容更正记录">
+          <span class="item-cat">公告</span>
+          <div class="item-main">
+            <h3>内容更正记录</h3>
+            <p>记录已发布的修订与勘误，并说明修改原因。与其他说法冲突时，这里是优先核对的位置。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+        <article class="item" data-cat="公告" data-name="访问与使用说明">
+          <span class="item-cat">公告</span>
+          <div class="item-main">
+            <h3>访问与使用说明</h3>
+            <p>说明各分区的开放范围与阅读建议，帮助新访问者快速理解站点结构，减少误入与重复查找。</p>
+          </div>
+          <a class="item-go" href="#index">进入 →</a>
+        </article>
+      </div>
+      <p class="empty-hint" id="idx-empty">没有匹配的条目，试试更短的关键词，或点击“全部”查看完整清单。</p>
+    </div>
+  </section>
+
+  <!-- GUIDE -->
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">HOW TO USE</span>
+        <h2>怎么用不良人研究所导航最快找到内容</h2>
+        <p>导航页的价值在于减少试错。多数访问者的目标无非三类：看新内容、查旧材料、找人讨论。下面按这个顺序给出建议路径。</p>
+      </div>
+      <div class="split">
+        <div class="note">
+          <h3>三条常见路径</h3>
+          <ol class="steps">
+            <li><span><strong>看新内容：</strong>从“动态发布”进入，先浏览标题列表，再挑感兴趣的单篇细读，避免一上来就沉进长文。</span></li>
+            <li><span><strong>查旧材料：</strong>先到“资料专区”看总览，确认时间线与人物关系，再按标签进入具体条目核对细节。</span></li>
+            <li><span><strong>找人讨论：</strong>讨论区主版适合看观点，问答板块适合问具体问题；提问前先搜一遍，很多细节已经有人答过。</span></li>
+          </ol>
+        </div>
+        <div class="note">
+          <h3>阅读时留意的几点</h3>
+          <p>资料条目与讨论帖的性质不同：前者经过整理，后者多为个人表达，引用时建议回到资料区确认。</p>
+          <p>遇到互相矛盾的说法，先看“内容更正记录”有没有说明；没有的话，以时间更晚、标注出处更明确的条目为准。</p>
+          <p>不良人研究所导航只做入口汇总，不改变各分区原有内容的呈现方式，条目描述仅用于帮助判断是否进入。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" style="background:var(--paper-2);">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">FAQ</span>
+        <h2>关于不良人研究所导航的常见问题</h2>
+        <p>以下问题来自访问路径上的实际困惑，回答只涉及导航页本身的功能与结构。</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>不良人研究所导航收录哪些内容？</summary>
+          <p>目前收录动态、资料、社区、公告四个分区共十个条目，覆盖内容更新、背景查阅、交流讨论与站点说明四类访问场景。清单会随站点结构变化调整。</p>
+        </details>
+        <details>
+          <summary>搜索框和分类标签怎么配合使用？</summary>
+          <p>两者可以叠加：先点分类标签限定范围，再输入名称关键词进一步缩小结果。点击“全部”会清除分类限制，搜索词则需手动清空。</p>
+        </details>
+        <details>
+          <summary>为什么条目只写描述，不直接放全文？</summary>
+          <p>导航页的职责是帮助判断“是否值得进入”。每条描述说明该入口收录什么、适合什么情况下使用，具体内容仍在对应分区内呈现。</p>
+        </details>
+        <details>
+          <summary>页面上的资源下载入口现在能用吗？</summary>
+          <p>下载入口目前为占位状态，按钮不可点击，待真实地址确定后替换。浏览索引、筛选条目与跳转分区不受影响。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download">
+    <div class="wrap">
+      <div class="dl-band">
+        <div>
+          <h2>离线索引单页</h2>
+          <p>把当前的不良人研究所导航条目整理成一份可离线查看的索引单页，方便在没有网络时对照查找入口名称与分区归属。</p>
+          <p class="dl-note">下载地址待替换，当前入口暂不可用。</p>
+        </div>
+        <a class="btn btn-dl" href="#" data-download-placeholder="true" aria-disabled="true" tabindex="-1">下载</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-text">不良人研究所导航</div>
+        <p>面向不良人研究所访问者的入口索引页，按用途分区整理动态、资料、社区与公告入口，帮助减少重复查找。</p>
+      </div>
+      <div class="footer-col">
+        <h3>页面导航</h3>
+        <ul>
+          <li><a href="#directory">站点分区</a></li>
+          <li><a href="#index">资源索引</a></li>
+          <li><a href="#guide">访问路径</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>分区入口</h3>
+        <ul>
+          <li><a href="#index">动态发布</a></li>
+          <li><a href="#index">资料专区</a></li>
+          <li><a href="#index">社区讨论</a></li>
+          <li><a href="#index">公告与校对</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>不良人研究所导航 · 入口索引页</span>
+      <span>条目描述仅用于说明收录范围，内容以对应分区为准。</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var search = document.getElementById('idx-search');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.chip'));
+  var items = Array.prototype.slice.call(document.querySelectorAll('#idx-list .item'));
+  var empty = document.getElementById('idx-empty');
+  var activeCat = 'all';
+
+  function apply(){
+    var q = (search.value || '').trim().toLowerCase();
+    var shown = 0;
+    items.forEach(function(el){
+      var cat = el.getAttribute('data-cat');
+      var name = (el.getAttribute('data-name') || '').toLowerCase();
+      var text = el.textContent.toLowerCase();
+      var catOk = (activeCat === 'all') || (cat === activeCat);
+      var qOk = !q || name.indexOf(q) !== -1 || text.indexOf(q) !== -1;
+      var ok = catOk && qOk;
+      el.hidden = !ok;
+      if(ok) shown++;
+    });
+    empty.classList.toggle('show', shown === 0);
+  }
+
+  chips.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      activeCat = btn.getAttribute('data-filter');
+      chips.forEach(function(b){ b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+      apply();
+    });
+  });
+
+  search.addEventListener('input', apply);
+  apply();
+})();
+</script>
+</body>
+  </html>
